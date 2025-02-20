@@ -1,16 +1,21 @@
-# This is a sample Python script.
+import numpy as np
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# входные данные
+a = np.random.randint(-5, 5, (3, 3))
+b = np.random.randint(-5, 5, (3, 3))
 
+# задание 1a
+print((a<0).sum())
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# задание 1b
+print(np.allclose(a, -a.T))
+print(a, '\n', -a.T)
 
+# задание 1c
+print((a==-1).sum())
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+# задание 1e
+print(a[np.triu_indices_from(a, k=1)].sum())
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# задание 3
+
