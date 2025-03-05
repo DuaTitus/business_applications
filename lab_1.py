@@ -33,14 +33,7 @@ print('Количество позиций, на которых стоит ма�
 
 # задание 4
 arr = np.arange(1, 17)
-print(arr.reshape(4, 4))
-
-# задание 5
-vec = np.arange(1, 4)
-matrix = np.zeros((3, 3), dtype=int)
-np.fill_diagonal(matrix, vec)
-np.fill_diagonal(np.fliplr(matrix), vec)
-print(matrix)
+print(arr.reshape(4, 4).T)
 
 # задание 6
 n = 5
